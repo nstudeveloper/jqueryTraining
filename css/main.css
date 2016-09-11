@@ -1,0 +1,18 @@
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.item{
+    width: 300px;
+    height: 150px;
+    margin: 8px;
+    background-color: #c0c0c0;
+    opacity: 0.6;
+    display: inline-block;
+}
+
+.item:hover {
+    opacity: 1;
+}
