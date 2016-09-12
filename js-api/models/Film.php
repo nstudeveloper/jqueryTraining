@@ -10,7 +10,7 @@ use Yii;
  * @property integer $id
  * @property string $title
  * @property string $description
- * @property integer $like
+ * @property integer $isliked
  */
 class Film extends \yii\db\ActiveRecord
 {
@@ -30,7 +30,7 @@ class Film extends \yii\db\ActiveRecord
         return [
             [['title', 'description'], 'required'],
             [['description'], 'string'],
-            [['like'], 'integer'],
+            [['isliked'], 'integer'],
             [['title'], 'string', 'max' => 255],
         ];
     }
@@ -44,7 +44,7 @@ class Film extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'description' => 'Description',
-            'like' => 'Like',
+            'isliked' => 'Isliked',
         ];
     }
 }

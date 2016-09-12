@@ -1,18 +1,50 @@
-#wrapper {
-    width: 960px;
-    margin: 0 auto;
-    overflow: auto;
+.item {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 20px 0;
+    background-color: #c0c0c0;
+    opacity: 0.8;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
-.item{
-    width: 300px;
-    height: 150px;
-    margin: 8px;
-    background-color: #c0c0c0;
-    opacity: 0.6;
-    display: inline-block;
+.item p {
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 20px;
 }
 
 .item:hover {
     opacity: 1;
+}
+
+.insertion {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.remove {
+    background-color: #aa0000;
+    position: absolute;
+    top: 0;
+    left: 265px;
+}
+
+.like {
+    position: absolute;
+    top: 255px;
+    left: 230px;
+}
+
+.liked {
+    background-color: #dca7a7;
 }
